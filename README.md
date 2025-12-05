@@ -10,11 +10,12 @@
 
 Плейбук создан в соответствии с принципами DRY, KISS и YAGNI — максимально просто, без повторений и избыточности. 
 ## 2. Структура ролей и задач
-|Роль|	Основные задачи|
-|common|	Установка пакетов, обновление системы|
-|users|	Создание пользователей и групп|
-|nginx|	Установка Nginx, деплой конфигурации, запуск сервиса|
-См. документацию Ansible по ролям [^1]
+|Роль|Основные задачи|
+|---|---|
+|common|Установка пакетов, обновление системы|
+|users|Создание пользователей и групп|
+|nginx|Установка Nginx, деплой конфигурации, запуск сервиса|
+См. документацию Ansible по ролям[^1]
 ## 3. Пример Playbook файла
 ```yaml 
 - name: Basic server configuration
@@ -47,4 +48,4 @@ ansible all -i inventory.ini -m ping
 ## 6. Полезные ссылки
 [Официальная документация Ansible](https://docs.ansible.com)
 ## Сноска
-[^1] Подробно про роли: https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html
+[^1]:Подробно про роли: https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html
