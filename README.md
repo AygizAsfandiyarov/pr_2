@@ -14,6 +14,7 @@
 |common|	Установка пакетов, обновление системы|
 |users|	Создание пользователей и групп|
 |nginx|	Установка Nginx, деплой конфигурации, запуск сервиса|
+См. документацию Ansible по ролям [^1]
 ## 3. Пример Playbook файла
 ```yaml 
 - name: Basic server configuration
@@ -30,7 +31,7 @@
 ```bash
 ansible-playbook -i inventory.ini playbook.yml
 ```
-==Проверка подключения==
+~~Проверка подключения~~
 ```bash
 ansible all -i inventory.ini -m ping
 ```
@@ -45,3 +46,5 @@ ansible all -i inventory.ini -m ping
   * Пользователи созданы.
 ## 6. Полезные ссылки
 [Официальная документация Ansible](https://docs.ansible.com)
+## Сноска
+[^1] Подробно про роли: https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html
